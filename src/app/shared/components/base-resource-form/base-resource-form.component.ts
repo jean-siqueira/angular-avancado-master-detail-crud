@@ -8,7 +8,7 @@ import { switchMap } from "rxjs/operators";
 
 import toastr from "toastr";
 
-export abstract class BaseResourceFormFormComponent<T extends BaseResourceModel> implements OnInit, AfterContentChecked {
+export abstract class BaseResourceFormComponent<T extends BaseResourceModel> implements OnInit, AfterContentChecked {
   
   currentAction: string;
   resourceForm: FormGroup;
@@ -89,7 +89,7 @@ export abstract class BaseResourceFormFormComponent<T extends BaseResourceModel>
 
   protected editionPageTitle(): string{
     return "Edição";
-}
+  }
 
   protected createResource() {
     const resource: T = this.jsonDataToResouceFn(this.resourceForm.value);
