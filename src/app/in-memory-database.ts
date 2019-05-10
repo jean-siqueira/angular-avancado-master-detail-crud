@@ -13,10 +13,11 @@ export class InMemoryDataBase implements InMemoryDbService {
         ];
 
         const entries: Entry[] = [
-            { id: 1, name: 'Gás de Cozinha', categoryId: categories[0].id, category: categories[0], paid: true, date: '24/04/2019', amout: '70,00', type: 'expense', description: 'Despesa com gás de cozinha'} as Entry,
-            { id: 2, name: 'Suplementos', categoryId: categories[1].id, category: categories[1], paid: false, date: '24/04/2019', amout: '15,00', type: 'expense', description: ''} as Entry,
-            { id: 3, name: 'Salário da Empresa', categoryId: categories[3].id, category: categories[3], paid: true, date: '05/04/2019', amout: '4405,00', type: 'revenue', description: ''} as Entry,
-            { id: 3, name: 'Projeto Freela', categoryId: categories[4].id, category: categories[4], paid: true, date: '10/04/2019', amout: '1250,00', type: 'revenue', description: ''} as Entry
+            { id: 1, name: 'Gás de Cozinha', categoryId: categories[0].id, category: categories[0], paid: true, date: '24/04/2019', amout: '158,00', type: 'expense', description: 'Despesa com gás de cozinha'} as Entry,
+            { id: 2, name: 'Suplementos', categoryId: categories[1].id, category: categories[1], paid: false, date: '24/04/2019', amout: '270,00', type: 'expense', description: ''} as Entry,
+            { id: 3, name: 'Férias', categoryId: categories[2].id, category: categories[2], paid: false, date: '24/04/2019', amout: '555,00', type: 'expense', description: ''} as Entry,
+            { id: 4, name: 'Salário da Empresa', categoryId: categories[3].id, category: categories[3], paid: true, date: '05/04/2019', amout: '4405,00', type: 'revenue', description: ''} as Entry,
+            { id: 5, name: 'Projeto Freela', categoryId: categories[4].id, category: categories[4], paid: true, date: '10/04/2019', amout: '1250,00', type: 'revenue', description: ''} as Entry
          ];
 
         return { categories, entries };
