@@ -1,0 +1,78 @@
+angular 7
+git bash
+
+bootstap 
+https://www.npmjs.com/package/bootstrap
+npm i bootstrap jquery --save
+
+angular-imask
+https://www.npmjs.com/package/angular-imask
+npm i angular-imask --save
+
+currency-formatter
+https://www.npmjs.com/package/currency-formatter
+npm i currency-formatter --save
+
+momentjs
+https://momentjs.com/
+npm install moment --save
+
+toastr(mensagens para o usuario)
+https://www.npmjs.com/package/toastr
+
+primeng
+https://www.primefaces.org/primeng/#/setup
+npm install primeng --save
+npm install primeicons --save
+npm install chart.js --save
+
+in-memory-web-api
+https://github.com/angular/in-memory-web-api
+npm i --save angular-in-memory-web-api
+
+para criar um projeto
+ng new nome_do_projeto --routing --skip-tests
+
+para gerar novos modulos: 
+ng g m pages/entries --routing
+
+para gerar modulos shared e core
+ng g m core
+  compoenentes, modulos e serviço, obrigatórois para o funcionamentom, exemplo componentizar a barra de navegação, token service
+ng g m shared
+	cabeçalho, migalha de pão, são essenciais mas não obrigatórios
+	
+map(this.jsonDataToResources.bind(this))	
+	
+catchError sempre por ultimo	
+
+ATENÇÃO, o this muda de acordo com o contexto, pode nao ser a classe
+https://www.typescriptlang.org/docs/handbook/functions.html
+https://yehudakatz.com/2011/08/10/understanding-javascript-function-invocation-and-this/
+
+                <!--</p-calendar>[locale]="ptBR"-->
+
+configuração de rotas:
+adicionar no app-routing.module.ts
+adicionar o path no xxx-routing.module
+adicionar o novo componente em xxx.module.ts em declarations[]
+
+Qual é a finalidade do switchMap??
+
+-------------
+DICA IMPORTANTES
+Error: Uncaught (in promise): Error: Template parse errors:
+Can't bind to 'routerLink' since it isn't a known property of 'a'. ("
+          </span>
+		  
+pode faltar importar algum modulo no shared-module		
+
+* caso a migalha de pão seja muito long pode criar um objeto na classe 
+
+ng g c shared/components/form-field-error --inline-template
+
+interpolação é feita com crase
+`Deve ter no mínimo ${requiredLength} caracteres`
+
+  
+
